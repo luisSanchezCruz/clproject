@@ -4,11 +4,51 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bulma.min.css"/>
+    <style>
+      #image{
+        width: 100%;
+        display: block;
+      }
+      #img-div {
+        margin-bottom: 40px;
+      }
+      #tribute-info {
+        margin-bottom: 40px;
+      }
+    </style>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <h1>Hello World, we are software developers!</h1>
+    <div id="main" class="container">
+      <div id="title" class="box">
+          <h1 class="title has-text-centered is-2">Dr. Norman Borlaug</h1>
+          <p class="subtitle has-text-centered">The man who saved a billion lives</p>
+      </div>
+      <div id="img-div" > 
+        <img id="image" src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" />
+        <div id="img-caption">
+          <p>Dr. Norman Borlaug, second from left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</p>
+        </div>
+      </div>
+      <div id="tribute-info">
+        <h2 class="subtitle has-text-centered is-size-3">Here's a time line of Dr. Borlaug's life:</h2>
+        <ul class="has-text-justified">
+          <li><strong>1994</strong> - <span>Born in Cresco, Iowa</span></li>
+          <li><strong>1993</strong> - <span> Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</span></li>
+          <li><strong>1935</strong> - <span>Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</span></li>
+          <li><strong>1940</strong> - <span>Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</span></li>
+          <li><strong>1955</strong> - <span>Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disenfectants, and other applied science.</span></li>
+          <li><strong>1937</strong> - <span>Receives a Ph.D. in Genetics and Plant Pathology</span></li>
+        </ul>
+      </div>
+      <footer class="fotter">
+        <div class="box has-background-success">
+          <p class="has-text-white">More info click <a href="https://es.wikipedia.org/wiki/Norman_E._Borlaug" id="tribute-link" target="_blank">here</a></p>
+        </div>
+      </footer>
+    </div>
     <script  src="js/index.js"></script>
   </body>
 </html>
